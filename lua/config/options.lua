@@ -10,6 +10,7 @@ local opt = vim.opt
 
 -- Enable highlighting of the current line
 opt.cursorline = true
+opt.modifiable = true
 
 -- char display
 opt.list = true
