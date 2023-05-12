@@ -8,20 +8,25 @@
 
 local opt = vim.opt
 
+opt.filetype = "plugin"
+opt.termguicolors = true
+opt.clipboard:prepend("unnamed")
+
 -- Enable highlighting of the current line
 opt.cursorline = true
 opt.modifiable = true
 
 -- char display
 opt.list = true
-opt.listchars="tab:>-,trail:-,nbsp:+,extends:→,precedes:←"
+opt.listchars="tab:>-,trail:.,nbsp:.,extends:>,precedes:<"
 
 -- indent
 opt.tabstop = 4
 opt.softtabstop = 4
 opt.shiftwidth = 4
 opt.autoindent = true
-opt.smartindent = true
+-- opt.smartindent = true
+opt.expandtab = true
 
 -- spell
 opt.spelllang = {"en"}
