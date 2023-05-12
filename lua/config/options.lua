@@ -11,6 +11,7 @@ local opt = vim.opt
 opt.filetype = "plugin"
 opt.termguicolors = true
 opt.clipboard:prepend("unnamed")
+opt.syntax = on
 
 -- Enable highlighting of the current line
 opt.cursorline = true
@@ -26,7 +27,7 @@ opt.softtabstop = 4
 opt.shiftwidth = 4
 opt.autoindent = true
 -- opt.smartindent = true
-opt.expandtab = true
+-- opt.expandtab = true
 
 -- spell
 opt.spelllang = {"en"}
