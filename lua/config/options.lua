@@ -16,13 +16,15 @@ opt.clipboard:prepend("unnamed")
 opt.syntax = on
 opt.background = "dark"
 
--- Enable highlighting of the current line
+vim.cmd([[colorscheme gruvbox]])
+
+-- enable highlighting of the current line
 opt.cursorline = true
 opt.modifiable = true
 
 -- char display
 opt.list = true
-opt.listchars="tab:>-,trail:.,nbsp:.,extends:>,precedes:<"
+opt.listchars="tab:>-,trail:-,nbsp:.,extends:>,precedes:<"
 
 -- indent
 opt.tabstop = 4
