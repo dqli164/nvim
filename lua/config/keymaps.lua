@@ -3,8 +3,8 @@ local opt = {noremap = true, silent = true}
 local os = vim.loop.os_uname()
 
 -- move
-map("n", "J", "5j", opt)
-map("n", "K", "5k", opt)
+map("n", "J", "9j", opt)
+map("n", "K", "9k", opt)
 map("n", "H", "^", opt)
 map("n", "L", "g_", opt)
 
