@@ -1,26 +1,25 @@
-local autoGroup = vim.api.nvim_create_augroup("autoGroup", {
+local myAutoGroup = vim.api.nvim_create_augroup("myAutoGroup", {
   clear = true,
 })
 
 local autocmd = vim.api.nvim_create_autocmd
 
-
--- Highlight on yank
+-- highlight on yank
 autocmd("TextYankPost", {
   callback = function()
     vim.highlight.on_yank()
   end,
-  group = autoGroup,
+  group = myAutoGroup,
   pattern = "*",
 })
 
--- 用o换行不要延续注释
+-- close new line comment when return
 autocmd("BufEnter", {
-  group = autoGroup,
+  group = myAutoGroup,
   pattern = "*",
   callback = function()
-    vim.opt.formatoptions = vim.opt.formatoptions
-      - "o" -- O and o, don't continue comments
-      + "r" -- But do continue when pressing enter.
+      vim.opt.formatoptions = vim.opt.formatoptions - { "c", "r", "o" }
   end,
 })
+
+
