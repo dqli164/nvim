@@ -1,7 +1,7 @@
 local opt = vim.opt
 
 -- use system clipboard
-opt.clipboard:prepend("unnamed")
+opt.clipboard:prepend("unnamedplus")
 opt.completeopt = {'menu', 'menuone', 'noselect'}
 -- opt.mouse = 'a'
 opt.number = true
@@ -41,6 +41,9 @@ opt.spelllang = { "en" }
 opt.splitbelow = true
 opt.splitright = true
 
+-- back to last position
+vim.cmd [[au BufReadPost * if line("'\"") > 1 && line ("'\"") <= line("$") | exe "normal! g'\"" | endif]]
+
 -- indent-blankline
 opt.termguicolors = true
 vim.cmd [[highlight IndentBlanklineIndent1 guifg=#363636 gui=nocombine]]
@@ -58,4 +61,5 @@ vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
+
 
