@@ -46,8 +46,8 @@ vim.cmd [[au BufReadPost * if line("'\"") > 1 && line ("'\"") <= line("$") | exe
 
 -- indent-blankline
 opt.termguicolors = true
-vim.cmd [[highlight IndentBlanklineIndent1 guifg=#363636 gui=nocombine]]
-vim.cmd [[highlight IndentBlanklineIndent2 guifg=#4F4F4F gui=nocombine]]
+-- vim.cmd [[highlight IndentBlanklineIndent1 guifg=#363636 gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent1 guifg=#4F4F4F gui=nocombine]]
 vim.cmd [[highlight IndentBlanklineIndent2 guifg=#696969 gui=nocombine]]
 
 -- treesitter
