@@ -5,7 +5,7 @@ opt.clipboard:prepend("unnamedplus")
 opt.completeopt = {'menu', 'menuone', 'noselect'}
 -- opt.mouse = 'a'
 opt.number = true
-opt.relativenumber = true
+-- opt.relativenumber = true
 
 
 -- enable highlighting of current line
