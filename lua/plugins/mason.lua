@@ -10,7 +10,7 @@ return {
         "williamboman/mason-lspconfig.nvim",
         config = function()
             require("mason-lspconfig").setup({
-                ensure_installed = { "lua_ls", "gopls@v0.11.0" },
+                ensure_installed = { "lua_ls", "gopls@v0.11.0", "pylsp" },
                 -- Whether servers that are set up (via lspconfig) should be automatically installed if they're not already installed.
                 -- This setting has no relation with the `ensure_installed` setting.
                 -- Can either be:
