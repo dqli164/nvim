@@ -48,8 +48,8 @@ map("v", ">", ">gv", opt)
 
 
 -- cancel highlight
-map("n", "<esc>", ":noh<cr><esc>", opt)
-map("i", "<esc>", ":noh<cr><esc>", opt)
+-- map("n", "<esc>", ":noh<cr><esc>", opt)
+-- map("i", "<esc>", ":noh<cr><esc>", opt)
 
 -- search words under cursor
 map("n", "gw", "*N", opt)
