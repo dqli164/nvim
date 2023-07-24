@@ -10,6 +10,7 @@ opt.relativenumber = true
 
 -- enable highlighting of current line
 opt.cursorline = true
+opt.cursorcolumn = true
 
 opt.autoread = true
 opt.autowrite = true
