@@ -14,15 +14,15 @@ return {
             renderer = {
                 group_empty = true,
                 icons = {
-                    webdev_colors = true,
+                    webdev_colors = false,
                     git_placement = "before",
                     modified_placement = "after",
                     padding = " ",
                     symlink_arrow = " ➛ ",
                     show = {
-                        file = true,
-                        folder = true,
-                        folder_arrow = true,
+                        file = false,
+                        folder = false,
+                        folder_arrow = false,
                         git = true,
                         modified = true,
                     },
@@ -31,6 +31,12 @@ return {
             filters = {
                 dotfiles = true,
             },
+            actions = {
+                open_file = {
+                    resize_window = true,
+                    -- quit_on_open = true
+                }
+            }
         })
     end,
 }
