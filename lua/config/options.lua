@@ -22,6 +22,7 @@ opt.shiftwidth = 4
 opt.autoindent = true
 opt.smartindent = true
 opt.expandtab = true
+opt.smarttab = true
 
 -- char display
 opt.list = true
@@ -54,14 +55,8 @@ vim.cmd [[highlight IndentBlanklineIndent2 guifg=#696969 gui=nocombine]]
 -- treesitter
 vim.wo.foldmethod = 'expr'
 vim.wo.foldexpr = 'nvim_treesitter#foldexpr()'
-vim.wo.foldlevel = 99 -- 默认不折叠
-
--- telescope
-local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
-vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
-vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
-vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
+-- do not folder
+vim.wo.foldlevel = 99
 
 --nvim-tree
 vim.keymap.set('n', '<leader>to', ':NvimTreeToggle<CR>', {})
