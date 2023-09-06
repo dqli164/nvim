@@ -52,11 +52,5 @@ opt.termguicolors = true
 vim.cmd [[highlight IndentBlanklineIndent1 guifg=#4F4F4F gui=nocombine]]
 vim.cmd [[highlight IndentBlanklineIndent2 guifg=#696969 gui=nocombine]]
 
--- treesitter
-vim.wo.foldmethod = 'expr'
-vim.wo.foldexpr = 'nvim_treesitter#foldexpr()'
--- do not folder
-vim.wo.foldlevel = 99
-
 --nvim-tree
 vim.keymap.set('n', '<leader>to', ':NvimTreeToggle<CR>', {})
