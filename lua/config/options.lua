@@ -26,7 +26,7 @@ opt.expandtab = true
 -- char display
 opt.list = true
 -- opt.listchars:append "tab:>-,trail:-,nbsp:.,extends:>,precedes:<,space:."
-opt.listchars:append "trail:-,nbsp:.,extends:>,precedes:<"
+-- opt.listchars:append "tab:>-,trail:-,nbsp:.,extends:>,precedes:<"
 
 -- highlight
 opt.hlsearch = true
