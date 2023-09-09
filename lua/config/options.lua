@@ -26,13 +26,16 @@ opt.smarttab = true
 -- char display
 opt.list = true
 -- opt.listchars:append "tab:>-,trail:-,nbsp:.,extends:>,precedes:<,space:."
-opt.listchars:append "tab:>-,trail:-,nbsp:.,extends:>,precedes:<"
+-- opt.listchars:append "tab:>-,trail:-,nbsp:.,extends:>,precedes:<"
 
 -- highlight
 opt.hlsearch = true
 
 -- background
 opt.background = "dark"
+-- load the colorschema here
+vim.cmd([[colorscheme  gruvbox]])
+
 -- vim.cmd [[highlight IndentBlanklineIndent1 guifg=#363636 gui=nocombine]]
 vim.cmd [[highlight IndentBlanklineIndent1 guifg=#4F4F4F gui=nocombine]]
 vim.cmd [[highlight IndentBlanklineIndent2 guifg=#696969 gui=nocombine]]
