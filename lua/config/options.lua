@@ -3,10 +3,9 @@ local opt = vim.opt
 -- use system clipboard
 opt.clipboard:prepend("unnamedplus")
 opt.completeopt = {'menu', 'menuone', 'noselect'}
--- opt.mouse = 'a'
+opt.mouse = 'a'
 opt.number = true
 opt.relativenumber = true
-
 
 -- enable highlighting of current line
 opt.cursorline = true
@@ -27,14 +26,16 @@ opt.smarttab = true
 -- char display
 opt.list = true
 -- opt.listchars:append "tab:>-,trail:-,nbsp:.,extends:>,precedes:<,space:."
--- opt.listchars:append "tab:>-,trail:-,nbsp:.,extends:>,precedes:<"
+opt.listchars:append "tab:>-,trail:-,nbsp:.,extends:>,precedes:<"
 
 -- highlight
 opt.hlsearch = true
 
 -- background
 opt.background = "dark"
-vim.cmd([[colorscheme  gruvbox]])
+-- vim.cmd [[highlight IndentBlanklineIndent1 guifg=#363636 gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent1 guifg=#4F4F4F gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent2 guifg=#696969 gui=nocombine]]
 
 -- spell
 opt.spelllang = { "en" }
@@ -43,14 +44,5 @@ opt.spelllang = { "en" }
 opt.splitbelow = true
 opt.splitright = true
 
--- back to last position
-vim.cmd [[au BufReadPost * if line("'\"") > 1 && line ("'\"") <= line("$") | exe "normal! g'\"" | endif]]
-
--- indent-blankline
 opt.termguicolors = true
--- vim.cmd [[highlight IndentBlanklineIndent1 guifg=#363636 gui=nocombine]]
-vim.cmd [[highlight IndentBlanklineIndent1 guifg=#4F4F4F gui=nocombine]]
-vim.cmd [[highlight IndentBlanklineIndent2 guifg=#696969 gui=nocombine]]
 
---nvim-tree
-vim.keymap.set('n', '<leader>to', ':NvimTreeToggle<CR>', {})

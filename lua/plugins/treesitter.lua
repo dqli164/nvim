@@ -12,7 +12,7 @@ return {
             -- recommendation: set to false if you don't have `tree-sitter` cli installed locally
             auto_install = true,
             highlight = {
-                enable = true,
+                enable = false,
                 -- note: these are the names of the parsers and not the filetype. (for example if you want to
                 -- disable highlighting for the `tex` filetype, you need to include `latex` in this list as this is
                 -- the name of the parser)

@@ -1,9 +1,10 @@
 return {
-    {
-        "ellisonleao/gruvbox.nvim",
-        priority = 1000,
-        config = function()
-            require("gruvbox").setup({})
-        end
-    }
+    "ellisonleao/gruvbox.nvim",
+    lazy = false,
+    priority = 10000,
+    config = function()
+        -- load the colorschema here
+        vim.cmd([[colorscheme  gruvbox]])
+        require("gruvbox").setup({})
+    end
 }
