@@ -8,11 +8,9 @@ return {
             use_treesitter_scope = false,
             char_highlight_list = {
                 "IndentBlanklineIndent1",
-                -- "IndentBlanklineIndent1",
             },
             space_char_highlight_list = {
                 "IndentBlanklineIndent1",
-                -- "IndentBlanklineIndent1",
             },
             -- context_patterns = { 'class', 'function', 'method'},
             show_current_context = true,
