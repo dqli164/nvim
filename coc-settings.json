@@ -1,0 +1,11 @@
+{
+    "npm.binPath": "yarn",
+    "languageserver": {
+        "go": {
+            "command": "gopls",
+            "rootPattern": ["go.mod"],
+            "trace.server": "verbose",
+            "filetypes": ["go"]
+        }
+    }
+}
