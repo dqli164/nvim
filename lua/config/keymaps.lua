@@ -53,3 +53,4 @@ map("v", ">", ">gv", opt)
 
 -- search words under cursor
 map("n", "gw", "*N", opt)
+

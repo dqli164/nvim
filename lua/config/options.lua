@@ -13,6 +13,7 @@ opt.cursorcolumn = false
 
 opt.autoread = true
 opt.autowrite = true
+opt.showmatch = true
 
 -- indent
 opt.tabstop = 4
@@ -50,3 +51,4 @@ opt.splitright = true
 
 opt.termguicolors = true
 
+opt.encoding = 'utf-8'
