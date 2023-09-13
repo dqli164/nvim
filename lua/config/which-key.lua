@@ -17,7 +17,9 @@ wk.register({
         },
         t = {
             name = "+tree",
-            o = { "<cmd>NvimTreeToggle<cr>", "Open Directory Tree"}
+            o = { "<cmd>NvimTreeToggle<cr>", "Open Directory Tree"},
+            v = {"<cmd>FloatermNew<cr>", "Open A Terminal Window"},
+            h = {"<cmd>FloatermToggle<cr>", "Hide Or Reopen Terminal Window"},
         }
     }
 })
