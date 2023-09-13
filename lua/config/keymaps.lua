@@ -41,8 +41,8 @@ map("n", "<C-k>", "<C-w>k", opt)
 map("n", "<C-l>", "<C-w>l", opt)
 
 -- better indenting
-map("v", "<", "<gv", opt)
-map("v", ">", ">gv", opt)
+-- map("v", "<", "<gv", opt)
+-- map("v", ">", ">gv", opt)
 
 -- highlights under cursor
 
