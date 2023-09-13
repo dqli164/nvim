@@ -43,6 +43,7 @@ require("lazy").setup({
 require("config.options")
 require("config.keymaps")
 require("config.autocmd")
+require("config.coc")
 require("config.which-key")
 require("lsp.setup")
 -- To get fzf loaded and working with telescope, you need to call
