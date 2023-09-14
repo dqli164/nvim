@@ -3,9 +3,25 @@
     "languageserver": {
         "go": {
             "command": "gopls",
-            "rootPattern": ["go.mod"],
+            "rootPattern": [
+                "go.mod"
+            ],
             "trace.server": "verbose",
-            "filetypes": ["go"]
-        }
-    }
+            "filetypes": [
+                "go"
+            ]
+        },
+    },
+    "coc.preferences.formatOnSaveFiletypes": [
+        "css",
+        "Markdown",
+        "javascript",
+        "html",
+        "less",
+        "sass",
+        "js",
+        "php",
+        "vue",
+        "json"
+    ],
 }

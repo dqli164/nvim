@@ -54,3 +54,5 @@ map("n", "<C-l>", "<C-w>l", opt)
 -- search words under cursor
 map("n", "gw", "*N", opt)
 
+-- vim-floaterm
+map("n", "<F7>", ":FloatermNew<CR>", opt)
