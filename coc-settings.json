@@ -22,6 +22,8 @@
         "js",
         "php",
         "vue",
+        "go",
+        "lua",
         "json"
     ],
 }
