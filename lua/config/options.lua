@@ -21,13 +21,13 @@ opt.softtabstop = 4
 opt.shiftwidth = 4
 opt.autoindent = true
 opt.smartindent = true
-opt.expandtab = true
+opt.expandtab = false
 opt.smarttab = true
 
 -- char display
 opt.list = true
 -- opt.listchars:append "tab:>-,trail:-,nbsp:.,extends:>,precedes:<,space:."
--- opt.listchars:append "tab:>-,trail:-,nbsp:.,extends:>,precedes:<"
+opt.listchars:append "tab:>-,trail:-,nbsp:.,extends:>,precedes:<"
 
 -- highlight
 opt.hlsearch = true
