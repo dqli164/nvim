@@ -1,5 +1,5 @@
 return {
     "neoclide/coc.nvim",
     branch = 'release',
-    build = 'yarn'
+    build = 'npm ci'
 }

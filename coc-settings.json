@@ -1,29 +1,14 @@
 {
-    "npm.binPath": "yarn",
+    "npm.gbinPath": "npm",
     "languageserver": {
         "go": {
             "command": "gopls",
-            "rootPattern": [
-                "go.mod"
-            ],
+            "rootPatterns": ["go.work", "go.mod", ".vim/", ".git/", ".hg/"],
             "trace.server": "verbose",
-            "filetypes": [
-                "go"
-            ]
-        },
+            "filetypes": ["go"],
+            "initializationOptions": {
+                "usePlaceholders": true
+            }
+        }
     },
-    "coc.preferences.formatOnSaveFiletypes": [
-        "css",
-        "Markdown",
-        "javascript",
-        "html",
-        "less",
-        "sass",
-        "js",
-        "php",
-        "vue",
-        "go",
-        "lua",
-        "json"
-    ],
 }
