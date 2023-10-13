@@ -76,8 +76,8 @@ keyset("n", "<leader>rn", "<Plug>(coc-rename)", {silent = true})
 
 
 -- Formatting selected code
-keyset("x", "<leader>f", "<Plug>(coc-format-selected)", {silent = true})
-keyset("n", "<leader>f", "<Plug>(coc-format-selected)", {silent = true})
+-- keyset("x", "<leader>f", "<Plug>(coc-format-selected)", {silent = true})
+-- keyset("n", "<leader>f", "<Plug>(coc-format-selected)", {silent = true})
 
 
 -- Setup formatexpr specified filetype(s)
@@ -98,7 +98,7 @@ vim.api.nvim_create_autocmd("User", {
 
 -- Apply codeAction to the selected region
 -- Example: `<leader>aap` for current paragraph
-local opts = {silent = true, nowait = true}
+opts = {silent = true, nowait = true}
 keyset("x", "<leader>a", "<Plug>(coc-codeaction-selected)", opts)
 keyset("n", "<leader>a", "<Plug>(coc-codeaction-selected)", opts)
 
