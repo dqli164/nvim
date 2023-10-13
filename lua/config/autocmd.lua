@@ -37,3 +37,10 @@ autocmd({'BufEnter','BufAdd','BufNew','BufNewFile','BufWinEnter'}, {
   end
 })
 
+autocmd("BufWritePre", {
+	group = vim.api.nvim_create_augroup('fmt', {}),
+	pattern = "*.go",
+	callback = function()
+		vim.cmd([[ Format ]])
+	end,
+})
