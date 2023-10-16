@@ -44,3 +44,5 @@ autocmd("BufWritePre", {
 		vim.cmd([[ Format ]])
 	end,
 })
+
+vim.cmd([[ autocmd Filetype make setlocal noexpandtab ]])
