@@ -81,12 +81,12 @@ keyset("n", "<leader>rn", "<Plug>(coc-rename)", {silent = true})
 
 
 -- Setup formatexpr specified filetype(s)
-vim.api.nvim_create_autocmd("FileType", {
-    group = "CocGroup",
-    pattern = "typescript,json",
-    command = "setl formatexpr=CocAction('formatSelected')",
-    desc = "Setup formatexpr specified filetype(s)."
-})
+-- vim.api.nvim_create_autocmd("FileType", {
+--     group = "CocGroup",
+--     pattern = "typescript,json",
+--     command = "setl formatexpr=CocAction('formatSelected')",
+--     desc = "Setup formatexpr specified filetype(s)."
+-- })
 
 -- Update signature help on jump placeholder
 vim.api.nvim_create_autocmd("User", {
@@ -145,8 +145,8 @@ keyset("v", "<C-b>", 'coc#float#has_scroll() ? coc#float#scroll(0) : "<C-b>"', o
 
 -- Use CTRL-S for selections ranges
 -- Requires 'textDocument/selectionRange' support of language server
-keyset("n", "<C-s>", "<Plug>(coc-range-select)", {silent = true})
-keyset("x", "<C-s>", "<Plug>(coc-range-select)", {silent = true})
+-- keyset("n", "<C-s>", "<Plug>(coc-range-select)", {silent = true})
+-- keyset("x", "<C-s>", "<Plug>(coc-range-select)", {silent = true})
 
 
 -- Add `:Format` command to format current buffer
