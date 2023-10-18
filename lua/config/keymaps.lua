@@ -20,8 +20,9 @@ map("n", "<leader>k", "<C-w>k", opt)
 map("n", "<leader>l", "<C-w>l", opt)
 
 -- jump between buffer
-map("n", "<C-l>", ":bnext<CR>", opt)
-map("n", "<C-h>", ":bprevious<CR>", opt)
+map("n", "<S-Tab>", ":bnext<CR>", opt)
+map("n", "<Tab>", ":bprevious<CR>", opt)
+-- <C-6> jump between two buffer
 
 -- move line of text using ALT+[jk]
 map("n", "<M-k>", "mz:m-2<cr>`z", opt)
