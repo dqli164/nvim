@@ -84,7 +84,7 @@ local function tab_win_closed(winnr)
       if last_buf_info.name:match(".*NvimTree_%d*$") then       -- and that buffer is nvim tree
         vim.schedule(function ()
           if #vim.api.nvim_list_wins() == 1 then                -- if its the last buffer in vim
-            vim.cmd "quit"                                        -- then close all of vim
+            -- vim.cmd "quit"                                        -- then close all of vim
           else                                                  -- else there are more tabs open
             vim.api.nvim_win_close(tab_wins[1], true)             -- then close only the tab
           end
