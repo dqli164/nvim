@@ -82,8 +82,8 @@ return {
         -- list of triggers, where WhichKey should not wait for timeoutlen and show immediately
         triggers_nowait = {
             -- marks
-            "`",
-            "'",
+            -- "`",
+            -- "'",
             "g`",
             "g'",
             -- registers
