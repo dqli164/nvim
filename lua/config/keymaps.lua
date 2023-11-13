@@ -57,3 +57,5 @@ map("n", "gw", "*N", opt)
 
 -- vim-floaterm
 map("n", "<F7>", ":FloatermNew<CR>", opt)
+
+vim.keymap.set({ "n", "x" }, "<leader>sr", function() require("ssr").open() end)
