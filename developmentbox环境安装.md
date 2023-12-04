@@ -20,11 +20,11 @@ source ~/.bashrc
 # 下载nvim配置文件
 git clone git@github.com:dqli164/nvim.git ~/.config/nvim
 # 安装node
-wget https://nodejs.org/dist/v21.0.0/node-v21.0.0-linux-x64.tar.xz
-tar -xvf node-v21.0.0-linux-x64 
-mv node-v21.0.0-linux-x64 /usr/local/node
-echo 'export PATH=$PATH:/usr/local/node/bin' >> ~/.bashrc
-source ~/.bashrc
+<!-- wget https://nodejs.org/dist/v21.0.0/node-v21.0.0-linux-x64.tar.xz -->
+<!-- tar -xvf node-v21.0.0-linux-x64  -->
+<!-- mv node-v21.0.0-linux-x64 /usr/local/node -->
+<!-- echo 'export PATH=$PATH:/usr/local/node/bin' >> ~/.bashrc -->
+<!-- source ~/.bashrc -->
 
 #安装gopls
 go install golang.org/x/tools/gopls@v0.11.0
@@ -34,4 +34,41 @@ apt install fd-find
 # only on debian
 ln -s $(which fdfind) /usr/local/bin/fd
 ```
+
+### Nodejs环境搭建
+
+Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions
+
+### 安装
+
+安装命令
+
+```shell
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+```
+
+配置环境变量及补全
+
+```shell
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+```
+
+### 使用
+
+```shell
+# 安装最新版本的nodejs
+nvim install node
+# 指定版本
+nvm install v20.10.0
+# 列出可选择的nodejs版本
+nvm ls-remote
+# 运行node
+nvm use node
+# 运行并指定版本
+nvm run node --version 
+
+```
+
 
