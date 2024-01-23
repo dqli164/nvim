@@ -1,5 +1,5 @@
 {
-    "npm.gbinPath": "npm",
+    "npm.binPath": "npm",
     "languageserver": {
         "go": {
             "command": "gopls",
@@ -7,8 +7,14 @@
             "trace.server": "verbose",
             "filetypes": ["go"],
             "initializationOptions": {
-                "usePlaceholders": true
+                "usePlaceholders": true,
             }
+        },
+        "solidity": {
+            "command": "solc",
+            "rootPatterns": ["truffle-config.js", "truffle.js", "hardhat.config.js", "buidler.config.js", "embark.json", "dappfile", ".git/"],
+            "filetypes": ["solidity"]
+
         }
     },
     "colors.enable": true
