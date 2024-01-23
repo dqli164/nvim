@@ -1,20 +1,38 @@
 {
     "npm.binPath": "npm",
+    "coc.preferences.formatOnSave": true,
     "languageserver": {
         "go": {
             "command": "gopls",
-            "rootPatterns": ["go.work", "go.mod", ".vim/", ".git/", ".hg/"],
+            "rootPatterns": [
+                "go.work",
+                "go.mod",
+                ".vim/",
+                ".git/",
+                ".hg/"
+            ],
             "trace.server": "verbose",
-            "filetypes": ["go"],
+            "filetypes": [
+                "go"
+            ],
             "initializationOptions": {
                 "usePlaceholders": true,
             }
         },
         "solidity": {
             "command": "solc",
-            "rootPatterns": ["truffle-config.js", "truffle.js", "hardhat.config.js", "buidler.config.js", "embark.json", "dappfile", ".git/"],
-            "filetypes": ["solidity"]
-
+            "rootPatterns": [
+                "truffle-config.js",
+                "truffle.js",
+                "hardhat.config.js",
+                "buidler.config.js",
+                "embark.json",
+                "dappfile",
+                ".git/"
+            ],
+            "filetypes": [
+                "solidity"
+            ]
         }
     },
     "colors.enable": true
