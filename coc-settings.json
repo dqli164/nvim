@@ -19,21 +19,6 @@
                 "usePlaceholders": true,
             }
         },
-        "solidity": {
-            "command": "solc",
-            "rootPatterns": [
-                "truffle-config.js",
-                "truffle.js",
-                "hardhat.config.js",
-                "buidler.config.js",
-                "embark.json",
-                "dappfile",
-                ".git/"
-            ],
-            "filetypes": [
-                "solidity"
-            ]
-        }
     },
     "colors.enable": true
 }
