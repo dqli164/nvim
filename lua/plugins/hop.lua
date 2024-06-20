@@ -1,5 +1,5 @@
 return {
-   "phaazon/hop.nvim",
+    "phaazon/hop.nvim",
     lazy = true,
     keys = { "r" },
     config = function()
@@ -9,5 +9,5 @@ return {
         vim.api.nvim_set_keymap("n", "U", "<cmd>HopWord<cr>", { silent = true })
         vim.api.nvim_set_keymap("n", "C", "<cmd>HopLine<cr>", { silent = true })
         vim.api.nvim_set_keymap("n", "P", "<cmd>HopPattern<cr>", { silent = true })
-    end, 
+    end,
 }
