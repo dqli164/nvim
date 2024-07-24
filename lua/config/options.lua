@@ -23,7 +23,6 @@ opt.autoindent = true
 opt.smartindent = true
 opt.expandtab = true
 opt.smarttab = true
-
 -- char display
 opt.list = true
 -- opt.listchars:append "tab:>-,trail:-,nbsp:.,extends:>,precedes:<,space:."

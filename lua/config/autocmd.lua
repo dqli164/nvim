@@ -47,6 +47,7 @@ autocmd("BufWritePre", {
 
 -- set noexpandtab for make project
 vim.cmd([[ autocmd Filetype make setlocal noexpandtab ]])
+vim.cmd([[ autocmd Filetype json setlocal noexpandtab ]])
 
 -- auto open nvim-tree
 local function open_nvim_tree(data)
@@ -76,3 +77,4 @@ vim.api.nvim_create_autocmd("BufEnter", {
 })
 
 vim.cmd([[ autocmd CursorHold * silent call CocActionAsync('highlight') ]])
+

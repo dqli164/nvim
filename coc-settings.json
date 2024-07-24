@@ -1,53 +1,53 @@
 {
-    "npm.binPath": "npm",
-    "coc.preferences.formatOnSave": true,
-    "languageserver": {
-        "go": {
-            "command": "gopls",
-            "rootPatterns": [
-                "go.work",
-                "go.mod",
-                ".vim/",
-                ".git/",
-                ".hg/"
-            ],
-            "trace.server": "verbose",
-            "filetypes": [
-                "go"
-            ],
-            "initializationOptions": {
-                "usePlaceholders": true,
-            }
-        },
-        "ts": {
-            "filetypes": [
-                "ts"
-            ],
-            "module": ""
-        },
-        "solidity": {
-            "module": "",
-            "args": [
-                "--stdio"
-            ],
-            "rootPatterns": [
-                ".git/"
-            ],
-            "trace.server": "verbose",
-            "filetypes": [
-                "sol"
-            ]
-        }
-    },
-    "colors.enable": true,
-    "tsserver.enable": true,
-    "tsserver.implicitProjectConfig.checkJs": true,
-    "tsserver.implicitProjectConfig.experimentalDecorators": true,
-    "coc.preferences.useQuickfixForLocations": true,
-    "diagnostic.enable": true,
-    "diagnostic.errorSign": "✗",
-    "diagnostic.warningSign": "⚠",
-    "diagnostic.infoSign": "",
-    "diagnostic.hintSign": "",
-    "suggest.noselect": false,
+	"npm.binPath": "npm",
+	"coc.preferences.formatOnSave": true,
+	"languageserver": {
+		"go": {
+			"command": "gopls",
+			"rootPatterns": [
+				"go.work",
+				"go.mod",
+				".vim/",
+				".git/",
+				".hg/"
+			],
+			"trace.server": "verbose",
+			"filetypes": [
+				"go"
+			],
+			"initializationOptions": {
+				"usePlaceholders": true,
+			}
+		},
+		"ts": {
+			"filetypes": [
+				"ts"
+			],
+			"module": ""
+		},
+		"solidity": {
+			"module": "",
+			"args": [
+				"--stdio"
+			],
+			"rootPatterns": [
+				".git/"
+			],
+			"trace.server": "verbose",
+			"filetypes": [
+				"sol"
+			]
+		}
+	},
+	"colors.enable": true,
+	"tsserver.enable": true,
+	"tsserver.implicitProjectConfig.checkJs": true,
+	"tsserver.implicitProjectConfig.experimentalDecorators": true,
+	"coc.preferences.useQuickfixForLocations": true,
+	"diagnostic.enable": true,
+	"diagnostic.errorSign": "✗",
+	"diagnostic.warningSign": "⚠",
+	"diagnostic.infoSign": "",
+	"diagnostic.hintSign": "",
+	"suggest.noselect": false,
 }
