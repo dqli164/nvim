@@ -19,6 +19,35 @@
                 "usePlaceholders": true,
             }
         },
+        "ts": {
+            "filetypes": [
+                "ts"
+            ],
+            "module": ""
+        },
+        "solidity": {
+            "module": "",
+            "args": [
+                "--stdio"
+            ],
+            "rootPatterns": [
+                ".git/"
+            ],
+            "trace.server": "verbose",
+            "filetypes": [
+                "sol"
+            ]
+        }
     },
-    "colors.enable": true
+    "colors.enable": true,
+    "tsserver.enable": true,
+    "tsserver.implicitProjectConfig.checkJs": true,
+    "tsserver.implicitProjectConfig.experimentalDecorators": true,
+    "coc.preferences.useQuickfixForLocations": true,
+    "diagnostic.enable": true,
+    "diagnostic.errorSign": "✗",
+    "diagnostic.warningSign": "⚠",
+    "diagnostic.infoSign": "",
+    "diagnostic.hintSign": "",
+    "suggest.noselect": false,
 }
