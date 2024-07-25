@@ -21,7 +21,7 @@ opt.softtabstop = 4
 opt.shiftwidth = 4
 opt.autoindent = true
 opt.smartindent = true
-opt.expandtab = true
+opt.expandtab = false
 opt.smarttab = true
 -- char display
 opt.list = true
