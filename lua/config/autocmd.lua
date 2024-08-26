@@ -48,6 +48,7 @@ autocmd("BufWritePre", {
 -- set noexpandtab for make project
 vim.cmd([[ autocmd Filetype make setlocal noexpandtab ]])
 vim.cmd([[ autocmd Filetype json setlocal noexpandtab ]])
+vim.cmd([[ autocmd Filetype solidity setlocal noexpandtab ]])
 
 -- auto open nvim-tree
 local function open_nvim_tree(data)
