@@ -20,8 +20,8 @@ return {
                     padding = " ",
                     symlink_arrow = " ➛ ",
                     show = {
-                        file = true,
-                        folder = true,
+                        file = false,
+                        folder = false,
                         folder_arrow = false,
                         git = true,
                         modified = true,
