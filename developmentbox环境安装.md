@@ -11,11 +11,12 @@ tar -xvf grpcurl_1.7.0_linux_x86_64.tar.gz
 mv grpcurl /usr/local/bin/
 
 #安装neovim
-wget https://github.com/neovim/neovim/releases/download/v0.9.4/nvim-linux64.tar.gz
-tar xzvf nvim-linux64.tar.gz
-mv nvim-linux64 /usr/local/nvim
-echo 'export PATH=$PATH:/usr/local/nvim/bin' >> ~/.bashrc
-source ~/.bashrc
+brew install neovim
+#wget https://github.com/neovim/neovim/releases/download/v0.9.4/nvim-linux64.tar.gz
+#tar xzvf nvim-linux64.tar.gz
+#mv nvim-linux64 /usr/local/nvim
+#echo 'export PATH=$PATH:/usr/local/nvim/bin' >> ~/.bashrc
+#source ~/.bashrc
 
 # 下载nvim配置文件
 git clone git@github.com:dqli164/nvim.git ~/.config/nvim
@@ -29,8 +30,8 @@ git clone git@github.com:dqli164/nvim.git ~/.config/nvim
 #安装gopls
 go install golang.org/x/tools/gopls@v0.11.0
 
-apt install ripgrep
-apt install fd-find
+brew install ripgrep ffind
+
 # only on debian
 ln -s $(which fdfind) /usr/local/bin/fd
 ```
@@ -70,4 +71,5 @@ nvm use node
 nvm run node --version 
 
 ```
-
+### jdk环境搭建
+brew instal --cask zulu@8
