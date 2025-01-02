@@ -73,3 +73,12 @@ nvm run node --version
 ```
 ### jdk环境搭建
 brew instal --cask zulu@8
+
+### go
+curl -sSL https://raw.githubusercontent.com/voidint/g/master/install.sh | bash
+cat << 'EOF' >> ~/.zshrc
+if [[ -n $(alias g 2>/dev/null) ]]; then
+    unalias g
+fi
+EOF 
+source ~/.zshrc
